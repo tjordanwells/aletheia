@@ -1,6 +1,6 @@
 <template>
   <v-card style="text-align-center">
-    <v-card-title class="justify-center">
+    <v-card-title class="justify-center font-weight-light">
       Recent Sermons
     </v-card-title>
     <v-divider class="mb-1" />

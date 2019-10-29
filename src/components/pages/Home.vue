@@ -4,12 +4,12 @@
       text-center
       wrap
     >
-      <v-flex xs12 md12 lg12 xl12 my-6>
-        <h1 class="display-4 font-weight-thin my-2">
+      <v-flex xs12 my-6>
+        <h1 :class="{'display-1 font-weight-thin my-2': $vuetify.breakpoint. smAndDown, 'display-4 font-weight-thin my-2': $vuetify.breakpoint. mdAndUp}">
           Aletheia
         </h1>
         <v-divider class="mx-auto" width="50%" />
-        <h2 class="display-4 font-weight-thin my-2">
+        <h2 :class="{'display-1 font-weight-thin my-2': $vuetify.breakpoint. smAndDown, 'display-4 font-weight-thin my-2': $vuetify.breakpoint. mdAndUp}">
           Fellowship
         </h2>
       </v-flex>
@@ -25,8 +25,8 @@
       </v-flex>
     </v-layout>
     <v-divider class="mb-12" />
-    <v-layout>
-      <v-flex xs12 md6 lg4 class="mx-4">
+    <v-layout row wrap>
+      <v-flex xs12 md4 class="mx-4 my-4">
         <v-card style="text-align-center">
           <v-card-title class="justify-center font-weight-light">
             Sunday Service
@@ -51,10 +51,7 @@
           </v-btn>
         </v-card>
       </v-flex>
-      <v-flex xs12 md6 lg4 class="mx-4">
-        <Player />
-      </v-flex>
-      <v-flex xs12 md6 lg4 class="mx-4">
+      <v-flex xs12 md4 class="mx-4 my-4">
         <Player />
       </v-flex>
     </v-layout>
